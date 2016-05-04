@@ -1,0 +1,14 @@
+{
+  "name": "tkh-recursive_directory",
+  "version": "0.1.0",
+  "author": "st01tkh",
+  "summary": "Provides resource to create recursive directory",
+  "license": "Apache 2.0",
+  "source": "https://github.com/st01tkh/puppet-recursive_directory.git",
+  "project_page": "https://github.com/st01tkh/puppet-recursive_directory",
+  "issues_url": "https://github.com/st01tkh/puppet-recursive_directory/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
