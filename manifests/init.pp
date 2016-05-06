@@ -49,6 +49,7 @@ define recursive_directory (
     $mode       = undef,
     $owner      = undef,
     $group      = undef,
+    $win_mode   = undef,
 ){
     if ($dest_path) {
         $path = $dest_path
@@ -59,8 +60,10 @@ define recursive_directory (
         $path,
         $mode,
         $owner,
-        $group
+        $group,
+        $win_mode
     )
+    notice("data: $data")
     recursive_directory::create_file_resource{ $data['paths_array'] : 
         mode => $mode,
         owner => $owner,
